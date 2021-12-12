@@ -1,0 +1,21 @@
+change in package.json
+
+"scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css"
+   // npm command      module name / sass file path / css file path 
+}
+
+    this command will compile sass into css by using npm module locally.
+
+    to run the compiler:
+    npm run compile:sass
+
+---------------------------------------------------------------------------------
+
+to select by class 
+[class^="col-"] {
+    
+}
+
+display: inline-block; take width according to the content
+

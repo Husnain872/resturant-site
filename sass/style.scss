@@ -1,0 +1,26 @@
+@import "abstract/mixin";
+@import "abstract/variables";
+
+
+@import "base/animation";
+@import "base/base";
+@import "base/utilities";
+@import "base/typography"; 
+
+
+
+// assending order here is BG-and-v at the beginning
+@import "componants/bg-video";
+@import "componants/button";
+@import "componants/composition"; 
+@import "componants/feature-box";
+@import "componants/form";  
+@import "componants/card";  
+@import "componants/popup";   
+@import "componants/story";  
+
+@import "layout/footer";
+@import "layout/grid";
+@import "layout/header";  
+ 
+@import "pages/home";

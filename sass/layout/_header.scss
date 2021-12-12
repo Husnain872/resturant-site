@@ -1,0 +1,115 @@
+.header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(139, 172, 18, 0.5),
+      rgba(219, 20, 20, 0.7)
+    ),
+    url(../img/hero3.jpeg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // clip-path: polygon(33% 0, 100% 0, 100% 99%, 0 100%, 0% 35%);
+  border-top-left-radius: 60%;
+  &__img--box {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    left: 50px;
+    top: 40px;
+    @include respond(phone) {
+      width: 80px;
+      height: 60px;
+      left: 20px;
+      top: 30px;
+    }
+  }
+  &-navbar {
+    top: 6%;
+    left: 50%;
+
+    position: absolute;
+    @include respond(phone) {
+      left: 45%;
+    }
+
+    & ul {
+      display: inline-block;
+    }
+    & li {
+      float: left;
+      list-style: none;
+      padding: 10px 20px;
+      font-size: 2rem;
+      font-weight: 700;
+      color: aliceblue !important;
+      @include respond(phone) {
+        font-size: 1.5rem;
+        padding: 4px;
+      
+      }
+    }
+    & li:hover {
+      background: black;
+      color: rgb(247, 243, 239);
+      border-radius: 12px;
+      border-bottom: 2px solid rgb(146, 146, 145);
+    }
+  }
+
+  &-text-box {
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    &-primary {
+      color: $heading-color;
+      backface-visibility: hidden;
+      margin-bottom: 60px;
+      word-spacing: 0px;
+
+      text-transform: uppercase;
+      // @include respond(phone) {
+      //   font-size: 2rem;
+      //   // margin-left: 20%;
+      //   width: 100%;
+      //   margin-left: 50px;
+      // }
+
+      &-main {
+        display: inline-block;
+        font-weight: 700;
+        letter-spacing: 15px;
+
+        font-size: 6rem;
+        animation: moveInLeft 1s ease-out;
+        @include respond(phone){
+          font-size: 3rem;
+          margin-left: 40px;
+          width: 100%;
+          letter-spacing: 10px;
+
+
+        }
+      }
+      &-sub {
+        display: inline-block;
+        letter-spacing: 15px;
+        animation: moveInRight 1s ease-out;
+        color: rgb(187, 184, 184);
+        font-size: 2rem;
+        font-weight: 900;
+
+        @include respond(phone){
+          font-size: 2rem;
+          margin-left: 40px;
+          width: 100%;
+          letter-spacing: 10px;
+
+        }
+      }
+    }
+  }
+}
